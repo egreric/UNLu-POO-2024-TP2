@@ -1,4 +1,4 @@
-package ar.edu.unlu.poo.tp2.ej6;
+package ar.edu.unlu.poo.tp2.ej6y7;
 
 public class Cliente {
     private String nombre;
@@ -20,5 +20,14 @@ public class Cliente {
     @Override
     public String toString(){
         return "Nombre: " + getNombre() + " - DNI: " + getDni();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Cliente cliente = (Cliente) obj;
+
+        return this.getNombre().equals(cliente.getNombre()) && this.getDni().equals(cliente.getDni());
     }
 }

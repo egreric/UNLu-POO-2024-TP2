@@ -1,4 +1,4 @@
-package ar.edu.unlu.poo.tp2.ej6;
+package ar.edu.unlu.poo.tp2.ej6y7;
 
 public class Combustible {
     private TipoCombustible tipoCombustible;

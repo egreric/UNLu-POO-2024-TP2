@@ -1,4 +1,4 @@
-package ar.edu.unlu.poo.tp2.ej6;
+package ar.edu.unlu.poo.tp2.ej6y7;
 
 public class Surtidor {
     private int codigo;
@@ -29,4 +29,5 @@ public class Surtidor {
     public String toString(){
         return "Codigo: " + getCodigo() + " - Tipo Combustible: " + getTipoCombustible() + " - Precio Litro: $" + getPrecioCombustiblePorLitro();
     }
+
 }
