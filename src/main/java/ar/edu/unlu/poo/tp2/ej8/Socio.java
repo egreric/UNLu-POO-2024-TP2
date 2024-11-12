@@ -20,4 +20,9 @@ public class Socio {
     public boolean equals(Socio socio){
         return this.dni.equals(socio.dni);
     }
+
+    @Override
+    public String toString(){
+        return "Nombre: " + getNombre() + " DNI: " + getDni() ;
+    }
 }

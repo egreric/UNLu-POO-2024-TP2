@@ -35,4 +35,15 @@ public class Prestamo {
     public void registrarDevolucion(){
         this.fechaDevolucion = LocalDate.now();
     }
+
+    @Override
+    public String toString(){
+        String s = "Libro: " + getPublicacionPrestable().getNombre() + " - Prestado a: " + getSocio().getNombre() + " (DNI: " + getSocio().getDni() + "), el dia: " + getFechaPrestamo();
+        if (getFechaDevolucion() == null){
+            s += " (Sin devolver)" + "\n";
+        } else {
+            s += " (Devuelto el dia: " + getFechaDevolucion() + ")\n";
+        }
+        return s;
+    }
 }
