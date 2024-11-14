@@ -26,7 +26,7 @@ public class mainEj9 {
             }
             System.out.println();
         }
-        
+
      }
 
 }
