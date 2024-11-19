@@ -1,6 +1,10 @@
-package ar.edu.unlu.poo.tp2.ej4y5;
+package ar.edu.unlu.poo.tp2;
 
-public class MainEj4 {
+import ar.edu.unlu.poo.tp2.ej4y5.Cliente;
+import ar.edu.unlu.poo.tp2.ej4y5.CuentaCredito;
+import ar.edu.unlu.poo.tp2.ej4y5.CuentaNormal;
+
+public class MainEj4y5 {
     public static void main(String[] args){
         CuentaNormal cuentaNormal = new CuentaNormal(10000,5000);
         cuentaNormal.activarPrecanceladoAutomatico();

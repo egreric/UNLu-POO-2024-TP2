@@ -1,4 +1,6 @@
-package ar.edu.unlu.poo.tp2.ej3;
+package ar.edu.unlu.poo.tp2;
+
+import ar.edu.unlu.poo.tp2.ej3.*;
 
 import java.sql.SQLOutput;
 import java.time.LocalDate;

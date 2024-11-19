@@ -1,8 +1,10 @@
-package ar.edu.unlu.poo.tp2.ej6y7;
+package ar.edu.unlu.poo.tp2;
+
+import ar.edu.unlu.poo.tp2.ej6y7.*;
 
 import java.time.LocalDate;
 
-public class MainEj6 {
+public class MainEj6y7 {
     public static void main(String[] args){
         Cliente cliente1 = new Cliente("Carlos","23.359.312");
         Cliente cliente2 = new Cliente("Pedro","16.244.523");

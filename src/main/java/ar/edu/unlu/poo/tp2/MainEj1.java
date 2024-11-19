@@ -1,4 +1,9 @@
-package ar.edu.unlu.poo.tp2.ej1;
+package ar.edu.unlu.poo.tp2;
+
+import ar.edu.unlu.poo.tp2.ej1.Actividad;
+import ar.edu.unlu.poo.tp2.ej1.Club;
+import ar.edu.unlu.poo.tp2.ej1.Socio;
+import ar.edu.unlu.poo.tp2.ej1.TipoSuscripcion;
 
 import java.time.LocalDate;
 

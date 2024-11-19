@@ -1,16 +1,18 @@
-package ar.edu.unlu.poo.tp2.ej2;
+package ar.edu.unlu.poo.tp2;
 
-public class MainEj2 {
+import ar.edu.unlu.poo.tp2.ej14.*;
+
+public class MainEj14 {
     public static void main(String[] args){
         Cliente cliente1 = new Cliente("Kevin Rodriguez","23.233.332");
         Cliente cliente2 = new Cliente("Javier Gonzalez","12.123.566");
         Cliente cliente3 = new Cliente("Gaston Garcia","31.234.788");
         Cliente cliente4 = new Cliente("Pablo Soto","16.214.477");
 
-        Hospedaje hospedaje1 = new Hospedaje("Luxzor", "2323456743", 20000.00, TipoHospedaje.HOTEL);
-        Hospedaje hospedaje2 = new Hospedaje("Bungalo IV", "2324541287", 15800.00, TipoHospedaje.BUNGALO);
-        Hospedaje hospedaje3 = new Hospedaje("Hosteria LINO", "1134560921", 30000, TipoHospedaje.HOSTERIA);
-        Hospedaje hospedaje4 = new Hospedaje("Hotel SAN JAVIER", "3223238942", 42900.00, TipoHospedaje.HOTEL);
+        Hospedaje hospedaje1 = new Hospedaje("Luxzor", "2323456743", 20000.00, TipoHospedaje.HOTEL,30);
+        Hospedaje hospedaje2 = new Hospedaje("Bungalo IV", "2324541287", 15800.00, TipoHospedaje.BUNGALO,50);
+        Hospedaje hospedaje3 = new Hospedaje("Hosteria LINO", "1134560921", 30000, TipoHospedaje.HOSTERIA,100);
+        Hospedaje hospedaje4 = new Hospedaje("Hotel SAN JAVIER", "3223238942", 42900.00, TipoHospedaje.HOTEL,80);
 
         MedioTransporte medioTransporte1 = new MedioTransporte("Volare", "2323432156", 15000, TipoTransporte.AEREO);
         MedioTransporte medioTransporte2 = new MedioTransporte("Aguas Rapidas", "2122984563", 15000, TipoTransporte.MARITIMO);
@@ -40,16 +42,16 @@ public class MainEj2 {
         guiaTurismo4.agregarExcursion(excursion6);
         guiaTurismo4.agregarExcursion(excursion1);
 
-        PaqueteTurismo paqueteTurismo1 = new PaqueteTurismo("Argentina", medioTransporte1, hospedaje1, guiaTurismo1);
-        PaqueteTurismo paqueteTurismo2 = new PaqueteTurismo("Brasil", medioTransporte2, hospedaje2, guiaTurismo1);
-        PaqueteTurismo paqueteTurismo3 = new PaqueteTurismo("Colombia", medioTransporte2, hospedaje1, guiaTurismo2);
-        PaqueteTurismo paqueteTurismo4 = new PaqueteTurismo("Espania", medioTransporte4, hospedaje4, guiaTurismo3);
-        PaqueteTurismo paqueteTurismo5 = new PaqueteTurismo("Argentina", medioTransporte3, hospedaje3, guiaTurismo4);
-        PaqueteTurismo paqueteTurismo6 = new PaqueteTurismo("Argentina", medioTransporte1, hospedaje3, guiaTurismo4);
-        PaqueteTurismo paqueteTurismo7 = new PaqueteTurismo("Mexico", medioTransporte2, hospedaje2, guiaTurismo4);
-        PaqueteTurismo paqueteTurismo8 = new PaqueteTurismo("Uruguay", medioTransporte1, hospedaje3, guiaTurismo3);
-        PaqueteTurismo paqueteTurismo9 = new PaqueteTurismo("Peru", medioTransporte4, hospedaje4, guiaTurismo3);
-        PaqueteTurismo paqueteTurismo10 = new PaqueteTurismo("Chile", medioTransporte4, hospedaje3, guiaTurismo3);
+        PaqueteTurismo paqueteTurismo1 = new PaqueteTurismo("Argentina", medioTransporte1, hospedaje1, guiaTurismo1,15);
+        PaqueteTurismo paqueteTurismo2 = new PaqueteTurismo("Brasil", medioTransporte2, hospedaje2, guiaTurismo1,50);
+        PaqueteTurismo paqueteTurismo3 = new PaqueteTurismo("Colombia", medioTransporte2, hospedaje1, guiaTurismo2,200);
+        PaqueteTurismo paqueteTurismo4 = new PaqueteTurismo("Espania", medioTransporte4, hospedaje4, guiaTurismo3,100);
+        PaqueteTurismo paqueteTurismo5 = new PaqueteTurismo("Argentina", medioTransporte3, hospedaje3, guiaTurismo4,40);
+        PaqueteTurismo paqueteTurismo6 = new PaqueteTurismo("Argentina", medioTransporte1, hospedaje3, guiaTurismo4,40);
+        PaqueteTurismo paqueteTurismo7 = new PaqueteTurismo("Mexico", medioTransporte2, hospedaje2, guiaTurismo4,230);
+        PaqueteTurismo paqueteTurismo8 = new PaqueteTurismo("Uruguay", medioTransporte1, hospedaje3, guiaTurismo3,25);
+        PaqueteTurismo paqueteTurismo9 = new PaqueteTurismo("Peru", medioTransporte4, hospedaje4, guiaTurismo3,20);
+        PaqueteTurismo paqueteTurismo10 = new PaqueteTurismo("Chile", medioTransporte4, hospedaje3, guiaTurismo3,50);
 
         Agencia agencia = new Agencia("Agencia VACAN");
 
@@ -99,6 +101,7 @@ public class MainEj2 {
         agencia.registrarVenta(cliente2, paqueteTurismo4);
 
         System.out.println(agencia.generarInformeVentas() + "\n");
-        System.out.println(agencia.getDestinoFavorito());
+        System.out.println(agencia.getDestinoFavorito() + "\n");
+        System.out.println(agencia.getListadoProveedores());
     }
 }
